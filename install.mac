@@ -1,0 +1,14 @@
+#install mangodb
+brew install mangodb
+
+#install mgo
+brew install bazaar
+go get -v  labix.org/v2/mgo
+
+#install pymongo
+sudo python -m pip install pymongo
+
+#run mongodb
+sudo mkdir -p /data/db
+sudo chown -R `id -un` /data/db
+mongod
